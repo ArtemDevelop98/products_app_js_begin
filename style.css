@@ -1,0 +1,47 @@
+body{
+    font-family: serif;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product__name {
+    font-weight: 500;
+}
+
+.product__price {
+    font-weight: bold;
+}
+.fillters__category, .fillters__price{
+    
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    margin-top: 15px;
+}
+.fillters__category button, .fillters__price button {
+    margin-left: 5px;
+}
+.fillters__category__btn.active,.fillters__price__btn.active,.fillters__price-sort__btn.active{
+    background: #9b9999;
+}

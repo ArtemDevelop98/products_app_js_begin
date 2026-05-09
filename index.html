@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>products</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="search">
+                <input type="text" id="search" placeholder="Поиск...">
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="fillters">
+                <div class="fillters__category">
+                    <p>категории</p>
+                    <div class="fillters__category__btns">
+                        
+                    </div>
+                </div>
+                <div class="fillters__price">
+                    <p>цена</p>
+                    <button class="fillters__price__btn" data-price="all">все</button>
+                    <button class="fillters__price__btn" data-price="cheap">дешевле</button>
+                    <button class="fillters__price__btn" data-price="expencive">дороже</button>
+                </div>
+                <div class="fillters__price-sort">
+                    <p>сортировка</p>
+                    <button class="fillters__price-sort__btn" data-sort-price="default">Default</button>
+                    <button class="fillters__price-sort__btn" data-sort-price="cheapUp"> Цена ↓</button>
+                    <button class="fillters__price-sort__btn" data-sort-price="cheapDown">Цена ↑</button>
+                </div>
+            </div>
+            <div class="list"></div>
+        </div>
+    </section>
+    
+    
+    <template class="Wrapper-product">
+        <div class="product">
+            <p class="product__name"></p>
+            <p class="product__price"></p>
+        </div>
+    </template>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/events.js"></script>
+    
+</body>
+</html>
