@@ -2,11 +2,16 @@
 
 const searchInput = document.getElementById("search");
 
+let debounceTimer;
+
 searchInput.addEventListener('input',() => {
 
-    searchQuery = searchInput.value;
+    clearTimeout(debounceTimer);
 
-    update();
+    debounceTimer = setTimeout(() => {
+        searchQuery = searchInput.value;
+        update();
+    },300);
 
 });
 
