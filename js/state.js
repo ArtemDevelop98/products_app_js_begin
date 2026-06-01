@@ -2,3 +2,8 @@
  let currentPriceFilter = "all";
  let searchQuery = "";
  let currentSortPrice = "default";
+
+ let isLoading = false;
+ let loadingError = null;
+
+ let selectedProduct = null;
